@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+
+    <a href="#"><li></li> home</a>
+    <a href="calc.html"><li></li> calculator</a>
+    <a href="day.html"><li></li> day</a>
+    <a href="atm.html"><li></li> atm</a>
+</ul>
+
+</nav>
+
+    <p id="hii" style="font-size: 30px;">hello this our first javascripty may God help us to understand it</p>
+    <button type="button"  onclick="document.getElementById('hii').innerHTML = 'hello there'"; > click me </button>
+    <button type="button" onclick="MyFunction()"> button for function</button>
+    <button type="button" onclick="MyExternalfunction()"> this external Function</button>
+
+
+     <script>
+        function MyFunction(){
+            document.getElementById('hii').innerHTML = "This my function";
+
+        }
+
+        function MyArray(){
+    const car = ["Toyota","Yaris","Toyota corolla"];
+    document.getElementById("dem").innerHTML = "i drive" + car[1];
+        }
+
+    function MyArrayTwo(){
+        const person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46; 
+document.getElementById("demo").innerHTML =
+person[0] + " " + person.length;
+    }
+
+
+     </script>
+
+<br><br>
+
+
+<p id="dem">
+
+</p>
+<p id="demo"></p>
+<button type="button" onclick="MyArrayTwo()">person</button>
+   <button type="button" onclick="MyArray()">drive</button>
+     <script src="scripty.js"></script>
+</body>
+</html>

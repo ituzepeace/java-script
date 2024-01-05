@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atm</title>
+        <link rel="stylesheet" href="main.css">
+        
+    
+    </head>
+
+
+
+<body>
+<nav>
+    <ul>
+    <a href="index.html"><li></li> home</a>
+    <a href="calc.html"><li></li> calculator</a>
+    <a href="day.html"><li></li> day</a>
+    <a href="#"><li></li> atm</a>
+</ul>
+
+</nav>
+
+
+ <form action="" method="post">
+    <label for="Balance">Enter Balance:</label><br><br><br><br>
+    <input type="number" name="balance" id="balance" placeholder="Balance" required> <br><br><br><br>
+    <button type="button" onclick="Account()">Widraw your Balance</button>
+    
+    
+ </form>
+<p id="show"></p>
+ <script>
+    function Account(){
+
+        const balance = parseInt(document.getElementById('balance').value);
+
+        if (balance === 20000) {
+            document.getElementById('show').innerHTML = "you have withdraw";
+            
+        } 
+        else if ( balance < 20000) {
+            document.getElementById('show').innerHTML = "you have withdrawn " + balance;
+        }
+        
+        else {
+            document.getElementById('show').innerHTML = "you have insufficient balance";
+        }
+        
+
+    
+
+
+    }
+ </script>
+  <script src="scripty.js"></script>
+</body>
+</html>

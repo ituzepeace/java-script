@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days</title>
+    <link rel="stylesheet" href="main.css">
+    
+
+</head>
+<body>
+
+<nav>
+<ul>
+    <a href="index.html"><li></li> home</a>
+    <a href="calc.html"><li></li> calculator</a>
+    <a href="#"><li></li> day</a>
+    <a href="atm.html"><li></li> atm</a>
+</ul>
+</nav>
+<h2>JavaScript if .. else</h2>
+
+<p id="demo" style="font-size: 30px;"></p>
+<button type="button" onclick=" Day('friday')" ></button>
+<button type="button" onclick=" Day('tuesday')">Tuesday</button>
+<button type="button" onclick=" Day()">thursday</button>
+ <script>
+    function Day(CheckDay){
+ if (CheckDay === 'friday'){
+    document.getElementById('demo').innerHTML = "It's sunny day";
+ }
+ else if (CheckDay === "tuesday") {
+    document.getElementById('demo').innerHTML = "It's  cold day"
+    
+ }
+ else{
+    document.getElementById('demo').innerHTML = "It's rainy day"
+ }
+    }
+ </script>
+ <script src="scripty.js"></script>
+</body>
+</html>

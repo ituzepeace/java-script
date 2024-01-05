@@ -1,0 +1,23 @@
+
+li { 
+    margin-right: 60px;
+    color: black;
+    align-items: center;
+    
+    font-size: 30px;
+    display: inline;
+}
+nav {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 40px;
+    background-color: antiquewhite;
+   
+}
+a{
+    text-decoration: none;
+}
+body{ 
+    background-color: beige;
+}
+   
